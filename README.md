@@ -6,3 +6,5 @@ It creates a vector of values for port GPIOA  (A0..A15) and the pins are updated
 This is inteded to drive a double-pulse Nd:YAG laser and an spectrometer for Laser-Induced Breakdown Spectroscopy (LIBS) experiments, which require a precise and programmable delay between the pulse of the lamp (A0) and the q-switch triggers (A1 & A2) and the spectrometer (A3). Besides, the spectrometer pulse can be programmed with different alternate delays (for every other pulse) so the plasma emission for consecutive laser shots is captured with a differential delay. This allows to substract both spectra and get a spectrum with an effective shorter time window (gated-like capture with nongated espectrometers).
 
 The actual jitter has been checked with an oscilloscope and it is about +/-50ns , although I believe is due to noise in the edges of pulses affecting the trigger of the oscilloscope.
+
+code for DMA transfer from:  https://www.stm32duino.com/viewtopic.php?t=1042
